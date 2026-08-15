@@ -255,6 +255,36 @@ main{ display:block; margin-left:var(--side-tabs-w); }
   color:var(--espresso-70); max-width:640px; margin:0 0 40px; line-height:1.6;
 }
 
+/* ---------------- PROSE BLOCK (Forced Awareness / Why Trade) ---------------- */
+.prose-block{ max-width:660px; }
+.prose{
+  font-family:var(--serif); font-size:16.5px; line-height:1.78;
+  color:var(--espresso-70); margin:0 0 20px;
+}
+.prose:last-child{ margin-bottom:0; }
+
+/* ---------------- EPIGRAPH ---------------- */
+.epigraph{
+  text-align:center; max-width:640px; margin:48px auto 0;
+  padding-top:40px; border-top:1px solid var(--line);
+}
+.epigraph__eyebrow{
+  font-size:12px; letter-spacing:0.14em; text-transform:uppercase;
+  color:var(--forest); margin:0 0 16px;
+}
+.epigraph__quote{
+  font-family:var(--serif); font-weight:600; font-style:italic;
+  font-size:clamp(20px,2.8vw,29px); color:var(--espresso);
+  margin:0 0 16px; line-height:1.42;
+}
+.epigraph__quote--inline{
+  text-align:left; max-width:640px; margin:-4px 0 22px; font-size:clamp(18px,2.2vw,22px);
+  border-left:3px solid var(--gold); padding-left:18px;
+}
+.epigraph__cite{
+  font-size:13px; color:var(--gold); letter-spacing:0.05em;
+}
+
 /* ---------------- STORY (timeline on the line) ---------------- */
 .story{ display:grid; grid-template-columns:280px 1fr; gap:56px; align-items:start; }
 .story__photo{
