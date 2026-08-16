@@ -8,7 +8,7 @@
 
 :root{
   --cream:        #FFFFFF;
-  --cream-deep:   #F3F3F3;
+  --cream-deep:   #FFFFFF;
   --paper:        #FFFFFF;
   --espresso:     #2B2118;
   --espresso-70:  rgba(43,33,24,0.7);
@@ -120,7 +120,7 @@ a{ color:inherit; }
   border-radius:10px;
   transition:background 0.2s ease, color 0.2s ease;
 }
-.side-tabs__link:hover{ background:var(--cream-deep); }
+.side-tabs__link:hover{ background:var(--line-soft); }
 .side-tabs__link.is-active{ background:var(--forest); }
 .side-tabs__link.is-active .side-tabs__icon{ color:#FFFFFF; }
 .side-tabs__link.is-active .side-tabs__label{ color:#FFFFFF; }
@@ -253,6 +253,20 @@ main{ display:block; margin-left:var(--side-tabs-w); }
 .section__lede{
   font-family:var(--serif); font-size:clamp(16px,1.9vw,19px);
   color:var(--espresso-70); max-width:640px; margin:0 0 40px; line-height:1.6;
+}
+
+/* ---------------- WHY TRADING IS HARD ---------------- */
+.why-hard__intro{
+  max-width:680px; margin:0 0 48px; padding-bottom:36px;
+  border-bottom:1px solid var(--line);
+}
+.why-hard__opening{ margin-bottom:22px !important; }
+.why-hard__opening .article__dropcap{ padding:4px 6px 0 0; }
+.why-hard__group{ margin-top:44px; }
+.why-hard__group:first-of-type{ margin-top:0; }
+.why-hard__group-title{
+  font-family:var(--serif); font-weight:700; font-size:clamp(19px,2.2vw,22px);
+  color:var(--espresso); margin:0 0 20px;
 }
 
 /* ---------------- DEEP DIVE (Why Rules — Mark Douglas) ---------------- */
