@@ -234,12 +234,11 @@ main{ display:block; margin-left:var(--side-tabs-w); }
 /* ---------------- SECTIONS ---------------- */
 .section{
   max-width:var(--max); margin:0 auto;
-  padding:clamp(56px,9vw,104px) var(--edge);
+  padding:clamp(32px,5vw,64px) var(--edge);
 }
 .section--tint{
   max-width:none; background:var(--cream-deep);
 }
-.section--tint > *{ max-width:var(--max); margin-left:auto; margin-right:auto; }
 
 .section__eyebrow{
   font-family:var(--mono); font-size:12px; letter-spacing:0.12em;
@@ -268,7 +267,10 @@ main .closing{
   max-width:var(--max);
 }
 main .section--tint{ max-width:none; }
-main .section--tint > *{ max-width:var(--max); }
+main .section--tint > *{
+  max-width:calc(var(--max) - 2 * var(--edge)) !important;
+  margin-left:auto !important; margin-right:auto !important;
+}
 main h2, main h3, main h4{ text-align:center; }
 main .section__eyebrow{ text-align:center; }
 main .paradox__col h4,
